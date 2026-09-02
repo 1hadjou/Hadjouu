@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إلى عيون أختي الجميلة ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Cairo", sans-serif;
+    color: white;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 20%, rgba(160,80,120,.35), transparent 35%),
+        linear-gradient(135deg, #080608, #26151f, #070607);
+    overflow-x: hidden;
+}
+
+/* النجوم */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1.5px);
+    background-size: 90px 90px;
+    opacity: .2;
+    animation: stars 15s linear infinite;
+}
+
+@keyframes stars {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(90px);
+    }
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: auto;
+    padding: 55px 0 70px;
+    position: relative;
+    z-index: 1;
+}
+
+/* العنوان */
+h1 {
+    font-family: "Amiri", serif;
+    font-size: clamp(2.3rem, 7vw, 5rem);
+    margin-bottom: 10px;
+    text-shadow: 0 0 25px rgba(255,255,255,.2);
+    animation: appear 1.2s ease;
+}
+
+.subtitle {
+    color: #e6cbd5;
+    margin-bottom: 35px;
+}
+
+/* إطار العين */
+.eye-frame {
+    width: min(430px, 90vw);
+    margin: 25px auto 40px;
+    padding: 10px;
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f2d1dd,
+            #713d53,
+            #f5e0e7
+        );
+
+    box-shadow:
+        0 0 30px rgba(255,210,225,.35),
+        0 0 80px rgba(155,75,105,.25);
+
+    animation: glow 3s ease-in-out infinite;
+}
+
+.eye-frame img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow:
+            0 0 45px rgba(255,210,225,.5),
+            0 0 100px rgba(155,75,105,.35);
+    }
+}
+
+/* الرسالة */
+.message {
+    max-width: 760px;
+    margin: auto;
+    padding: 30px 28px;
+
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 28px;
+
+    background: rgba(255,255,255,.06);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+
+.message p {
+    font-family: "Amiri", serif;
+    font-size: clamp(1.4rem, 4vw, 2.1rem);
+    line-height: 2;
+    margin: 0;
+    color: #f7e9ee;
+}
+
+.highlight {
+    color: #ffd4e2;
+    font-weight: bold;
+}
+
+/* الزر */
+button {
+    margin-top: 28px;
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-family: "Cairo", sans-serif;
+    font-size: 1rem;
+
+    color: #2b111c;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5cbd8,
+            white
+        );
+
+    box-shadow:
+        0 8px 30px rgba(255,190,215,.25);
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* المفاجأة */
+.surprise {
+    max-width: 700px;
+    margin: 20px auto 0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    padding: 0 25px;
+
+    transition: .8s ease;
+
+    font-family: "Amiri", serif;
+    font-size: 1.5rem;
+    line-height: 1.9;
+
+    color: #f4dce5;
+}
+
+.surprise.show {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+/* التوقيع */
+.signature {
+    margin-top: 35px;
+    color: #d9b7c3;
+    font-size: .95rem;
+}
+
+/* القلوب */
+.heart {
+    position: fixed;
+    bottom: -30px;
+
+    font-size: 20px;
+
+    animation: float 5s linear forwards;
+
+    pointer-events: none;
+
+    z-index: 10;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(.8);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            translateX(var(--move))
+            scale(1.5);
+
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+<h1>
+إلى عيون أختي الجميلة 👁️❤️
+</h1>
+
+<div class="subtitle">
+هدية صغيرة لأجمل العيون وأقرب قلب
+</div>
+
+<!-- صورة عين أختك -->
+<div class="eye-frame">
+
+<img src="eye.jpg" alt="عيون أختي">
+
+</div>
+
+<section class="message">
+
+<p>
+
+<span class="highlight">
+عيون أختي
+</span>
+
+ليست مجرد عيون جميلة،
+بل حكاية من السحر والهدوء.
+
+<br>
+
+في سوادها عمقٌ يأسر القلب،
+وفي لمعانها نورٌ يجعل كل شيء أجمل.
+
+<br><br>
+
+يا أختي،
+كأن الليل اختار أجمل ما فيه
+ليضعه في عينيكِ،
+
+وكأن النجوم تركت بريقها هناك
+لتبقى نظرتكِ مختلفة عن الجميع.
+
+<br><br>
+
+<span class="highlight">
+ما أجمل عينيكِ…
+وما أجمل الحكاية التي تسكن فيهما ❤️
+</span>
+
+</p>
+
+</section>
+
+<button onclick="showSurprise()">
+اضغطي هنا يا أختي 🎁
+</button>
+
+<div class="surprise" id="surprise">
+
+مهما كبرت الأيام وتغيّرت الحياة،
+ستبقين دائمًا أختي الجميلة،
+صاحبة العيون التي أحب فيها
+الدفء والبراءة والجمال.
+
+<br><br>
+
+أتمنى أن تبقى ابتسامتكِ جميلة دائمًا
+مثل بريق عينيكِ ❤️
+
+<br><br>
+
+<span class="highlight">
+وجودكِ في حياتي أجمل هدية من الحياة نفسها 🌹
+</span>
+
+</div>
+
+<div class="signature">
+صُنعت هذه الهدية بكل محبة لأختي 🌹
+</div>
+
+</main>
+
+<script>
+
+function showSurprise() {
+
+    document
+        .getElementById("surprise")
+        .classList
+        .toggle("show");
+
+    /* إنشاء القلوب */
+    for (let i = 0; i < 20; i++) {
+
+        setTimeout(function() {
+
+            const heart = document.createElement("div");
+
+            heart.className = "heart";
+
+            const symbols = [
+                "❤️",
+                "💗",
+                "💕",
+                "✨",
+                "🌹"
+            ];
+
+            heart.innerHTML =
+                symbols[
+                    Math.floor(
+                        Math.random() * symbols.length
+                    )
+                ];
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.setProperty(
+                "--move",
+                (Math.random() * 160 - 80) + "px"
+            );
+
+            heart.style.animationDuration =
+                (4 + Math.random() * 3) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(function() {
+                heart.remove();
+            }, 7000);
+
+        }, i * 100);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+<img src="eye.jpg" alt="عيون أختي">
